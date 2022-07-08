@@ -1,0 +1,105 @@
+#include <Servo.h>
+
+#define EnA 10
+#define EnB 11
+#define In1 7
+#define In2 8
+#define In3 12
+#define In4 13
+
+Servo servo1; //base 360 servo
+Servo servo2; //2nd from bottom
+Servo servo3; //3rd from bottom
+Servo servo4; //claw
+
+void setup() {
+servo1.attach(3); //remember connect pwm
+servo2.attach(5);
+servo3.attach(6);
+servo4.attach(9);
+
+pinMode(EnA, OUTPUT);
+pinMode(EnB, OUTPUT);
+pinMode(In1, OUTPUT);
+pinMode(In2, OUTPUT);
+pinMode(In3, OUTPUT);
+pinMode(In4, OUTPUT);
+
+Serial.begin(9600);
+}
+
+void loop() {
+    Serial.println("Enter command");
+    int command = Serial.read();
+    //delay(3000);
+
+    //initial position
+    if(command == '1'){ 
+      servo2.write(95);
+      delay(1000);
+      servo3.write(70);
+      delay(1000);
+      servo4.write(180);
+      delay(1000);
+      command = '0';
+    }
+
+    //grab
+    else if(command == '2'){
+      servo1.write(45); // rotate the motor counterclockwise
+      delay(250); // keep rotating for 5 seconds (5000 milliseconds)
+      servo1.write(90); // stop the motor
+      delay(1000); // stay stopped   
+      servo2.write(60);
+      delay(1000);
+      servo3.write(100);
+      delay(1000);
+      servo4.write(0);
+      delay(1000);
+      servo1.write(135); // rotate the motor counterclockwise
+      delay(250); // keep rotating for 5 seconds (5000 milliseconds)
+      servo1.write(90); // stop the motor
+      delay(1000); // stay stopped        
+      command = '1';  
+    }
+
+  //rotate counterclockwise
+  else if(command == '8'){
+      servo1.write(135); // rotate the motor counterclockwise
+      delay(100); // keep rotating for 5 seconds (5000 milliseconds)
+      servo1.write(90); // stop the motor
+      delay(1000); // stay stopped   
+      command = '0';
+  }
+
+  //rotate clockwise 
+  else if(command == '9'){
+      servo1.write(45); // rotate the motor counterclockwise
+      delay(100); // keep rotating for 5 seconds (5000 milliseconds)
+      servo1.write(90); // stop the motor
+      delay(1000); // stay stopped 
+      command = '0';  
+  }  
+
+  else if(command == '5'){
+    analogWrite(EnA,50);    
+    analogWrite(EnB,50);
+    digitalWrite(In1,HIGH);
+    digitalWrite(In2,LOW);
+    digitalWrite(In3,HIGH);
+    digitalWrite(In4,LOW); 
+    command = '0';
+  }
+
+  else if(command == '6'){
+    analogWrite(EnA,100);
+    analogWrite(EnB,100);
+    digitalWrite(In1,LOW);
+    digitalWrite(In2,LOW);
+    digitalWrite(In3,LOW);
+    digitalWrite(In4,LOW);
+    delay(1000);
+  }
+
+  
+}
