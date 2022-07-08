@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="06/29/22||00:54:26" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.5.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem1" uid="Assem1" version="340">
+<AssemblyFile name="Assem1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="360 servo-1" uid="360 servo-1" entityUid="360 servo*:*Default">
+<Transform>
+<Rotation>-1.6521175961678895e-16 8.2512995791983839e-15 0.99999999999999989 0.99984769515639149 0.017452406437274092 0 -0.017452406437274092 0.99984769515639149 -8.2529262090834537e-15</Rotation>
+<Translation>-0.086536158865783808 0.076950356441105344 0.035074023150560109</Translation>
+</Transform>
+</Instance>
+<Instance name="joint3-2" uid="joint3-2" entityUid="joint3*:*Default">
+<Transform>
+<Rotation>-0.99885084796550561 0.047779366043983092 0.0037570865075771832 -0.04791955642993552 -0.99699345811691908 -0.060891383492457839 0.00083643896882310475 -0.06100144795414654 0.99813732708347758</Rotation>
+<Translation>-0.065532115670719995 0.089690792404726924 0.17569134936660555</Translation>
+</Transform>
+</Instance>
+<Instance name="servo s90 (1)-7" uid="servo s90 (1)-7" entityUid="servo s90 (1)*:*Default">
+<Transform>
+<Rotation>8.6492228310031116e-15 -0.99885084796550572 0.04792685592223133 0.017452406437273974 -0.047919556429935291 -0.9986987181433179 0.99984769515639149 0.00083643896882408834 0.017432350968909351</Rotation>
+<Translation>-0.077546501234093637 0.067666059675394102 0.10874727726464548</Translation>
+</Transform>
+</Instance>
+<Instance name="clamp-1" uid="clamp-1" entityUid="clamp*:*Default">
+<Transform>
+<Rotation>0.23595961294996284 -0.0037570865075766667 -0.97175559960181257 0.97001321065007451 0.060891383492458075 0.2353011062037503 0.05828749626496154 -0.99813732708347747 0.018012330826772682</Rotation>
+<Translation>-0.057167151183450879 0.008247446922233323 0.19673993010999277</Translation>
+</Transform>
+</Instance>
+<Instance name="servo s90 (2)-7" uid="servo s90 (2)-7" entityUid="servo s90 (2)*:*Default">
+<Transform>
+<Rotation>0.0065773902267473455 0.99885084796550572 0.047473376290247261 -0.15434677914526074 0.047919556429935332 -0.98685398508545441 -0.98799484295480466 -0.00083643896882291133 0.15448459685212063</Rotation>
+<Translation>-0.099045987386747178 0.078796269165761573 0.17877596977334792</Translation>
+</Transform>
+</Instance>
+<Instance name="base_holder-1" uid="base_holder-1" grounded="true" entityUid="base_holder*:*Default">
+<Transform>
+<Rotation>1 6.2399108125056738e-15 0 0 0.017452406437273967 -0.9998476951563916 -6.2403295120282405e-15 0.9998476951563916 0.017452406437273967</Rotation>
+<Translation>-0.086536158865783808 0.076950356441105691 0.035074023150559595</Translation>
+</Transform>
+</Instance>
+<Instance name="servo s90 (2)-6" uid="servo s90 (2)-6" entityUid="servo s90 (2)*:*Default">
+<Transform>
+<Rotation>-0.047779366043982377 0.0037570865075769594 0.99885084796550572 0.99699345811691908 -0.060891383492458186 0.047919556429934819 0.06100144795414647 0.99813732708347758 -0.00083643896882292846</Rotation>
+<Translation>-0.07349540935009384 0.025904118415946947 0.16281322158244593</Translation>
+</Transform>
+</Instance>
+<Instance name="joint2v2-3" uid="joint2v2-3" entityUid="joint2v2*:*Default">
+<Transform>
+<Rotation>0.99885084796550572 -0.0065773902267462665 0.047473376290246845 0.047919556429934757 0.15434677914526002 -0.98685398508545463 -0.0008364389688238779 0.98799484295480489 0.15448459685211985</Rotation>
+<Translation>-0.11185833464157399 0.073103017364654216 0.094559399896922067</Translation>
+</Transform>
+</Instance>
+<Instance name="joint1-1" uid="joint1-1" entityUid="joint1*:*Default">
+<Transform>
+<Rotation>0.047926855922229936 8.2451406813177641e-15 -0.99885084796550572 -0.9986987181433179 0.017452406437274078 -0.047919556429933861 0.01743235096890948 0.9998476951563916 0.00083643896882366659</Rotation>
+<Translation>-0.086536158865783433 0.066746116287280999 0.080759069750985943</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>360 servo-1</Uid>
+</InstancePath>
+<Position>0.027499999999999997 0.028000000000000004 0.010000000000000009</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_holder-1</Uid>
+</InstancePath>
+<Position>-0.0094999999999999807 0.028000000000000004 -0.028000000000000011</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>360 servo-1</Uid>
+</InstancePath>
+<Position>-0.027499999999999997 0.028000000000000004 0.009999999999999995</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_holder-1</Uid>
+</InstancePath>
+<Position>-0.0094999999999999946 0.02799999999999999 0.028000000000000032</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>360 servo-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000018 0.038000000000000013 -0.009999999999999995</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_holder-1</Uid>
+</InstancePath>
+<Position>-0.010500000000000009 0 -0.021000000000000005</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_holder-1</Uid>
+</InstancePath>
+<Position>-0.0094999999999999807 0.028000000000000018 -0.029000000000000012</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>360 servo-1</Uid>
+</InstancePath>
+<Position>0.027499999999999997 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>360 servo-1</Uid>
+</InstancePath>
+<Position>-0.011000000000000024 0.04550000000000002 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>360 servo-1</Uid>
+</InstancePath>
+<Position>-0.011000000000000024 0.04550000000000002 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>joint1-1</Uid>
+</InstancePath>
+<Position>0 0.0040000000000000036 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident35">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint3-2</Uid>
+</InstancePath>
+<Position>0.041001999999999997 0.080000000000000002 0.0069999999999999785</Position>
+<Axis>1.0430024899310553e-16 -4.0939474033052647e-16 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-6</Uid>
+</InstancePath>
+<Position>-0.016 0.016000000000000014 0.0060000000000000053</Position>
+<Axis>1.5959455978986625e-16 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident36">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint3-2</Uid>
+</InstancePath>
+<Position>0.041001999999999997 0.051999999999999998 0.0069999999999999785</Position>
+<Axis>1.0430024899310553e-16 -2.3592239273284576e-16 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-6</Uid>
+</InstancePath>
+<Position>0.016 0.016000000000000014 0.0060000000000000053</Position>
+<Axis>1.5959455978986625e-16 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident37">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint3-2</Uid>
+</InstancePath>
+<Position>0.0049999999999999906 0.080000000000000016 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-6</Uid>
+</InstancePath>
+<Position>-0.011000000000000003 0.02250000000000002 0.0059999999999999776</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident38">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint3-2</Uid>
+</InstancePath>
+<Position>0.041001999999999997 0.075000000000000011 0.0069999999999999785</Position>
+<Axis>0 -1.0000000000000002 2.3592239273284576e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-6</Uid>
+</InstancePath>
+<Position>-0.011000000000000003 0.02250000000000002 -0.0060000000000000192</Position>
+<Axis>-1.0000000000000002 1.5959455978986625e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>servo s90 (2)-6</Uid>
+</InstancePath>
+<Position>-0.0050000000000000044 0.0315 0</Position>
+<Axis>1.5959455978986625e-16 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>clamp-1</Uid>
+</InstancePath>
+<Position>0.0065000000000000058 0.0035000000000000031 0.017999999999999995</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident39">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-6</Uid>
+</InstancePath>
+<Position>-0.0050000000000000044 0.0315 0</Position>
+<Axis>-1.5959455978986625e-16 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>clamp-1</Uid>
+</InstancePath>
+<Position>0 0.0035000000000000309 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident40">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint1-1</Uid>
+</InstancePath>
+<Position>0 0.017000000000000001 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (1)-7</Uid>
+</InstancePath>
+<Position>-0.010999999999999996 0.022499999999999992 -0.0059999999999999915</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident41">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint1-1</Uid>
+</InstancePath>
+<Position>-0.0060000000000000053 0.024000000000000007 -0.0076999999999999985</Position>
+<Axis>1 0 -2.7265651758937026e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (1)-7</Uid>
+</InstancePath>
+<Position>-0.010999999999999996 0.022499999999999992 -0.0059999999999999915</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident42">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint1-1</Uid>
+</InstancePath>
+<Position>0.0060000000000000053 0.016999999999999987 0.0069999999999999923</Position>
+<Axis>1.0208441080308828e-16 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (1)-7</Uid>
+</InstancePath>
+<Position>-0.015999999999999986 0.015999999999999986 0.0059999999999999915</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident44">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint2v2-3</Uid>
+</InstancePath>
+<Position>0.0025000000000000161 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (1)-7</Uid>
+</InstancePath>
+<Position>-0.0049999999999999906 0.031499999999999986 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>joint2v2-3</Uid>
+</InstancePath>
+<Position>0.0025000000000000161 0.0080000000000000071 0.0085000000000000006</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>servo s90 (1)-7</Uid>
+</InstancePath>
+<Position>-0.0049999999999999906 0.031499999999999986 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident49">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint2v2-3</Uid>
+</InstancePath>
+<Position>0.041002000000000011 0.068000000000000019 0.016999999999999973</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-7</Uid>
+</InstancePath>
+<Position>0.015999999999999986 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident50">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint2v2-3</Uid>
+</InstancePath>
+<Position>0.031000000000000014 -9.999999999871223e-07 0.014999999999999999</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-7</Uid>
+</InstancePath>
+<Position>0.015999999999999986 0.018000000000000002 0.0059999999999999915</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident51">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint2v2-3</Uid>
+</InstancePath>
+<Position>-2.0000000000020002e-06 0.080000000000000029 0.0020000000000000018</Position>
+<Axis>5.3174695549551565e-16 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-7</Uid>
+</InstancePath>
+<Position>-0.01100000000000001 0.022499999999999992 -0.0060000000000000123</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>joint3-2</Uid>
+</InstancePath>
+<Position>0.0025000000000000022 0.0079999999999999932 0.0084999999999999798</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>servo s90 (2)-7</Uid>
+</InstancePath>
+<Position>-0.0050000000000000044 0.031500000000000014 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident53">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>joint3-2</Uid>
+</InstancePath>
+<Position>0.0025000000000000022 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo s90 (2)-7</Uid>
+</InstancePath>
+<Position>-0.0050000000000000044 0.031500000000000014 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="360 servo" uid="360 servo*:*Default" version="191">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="360 servo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.055</Mass>
+<CenterOfMass>-0.00035304940346864454 0.019938329549293192 0</CenterOfMass>
+<Inertia>9.1669388893207174e-06 9.5308238715784847e-06 1.5088702231625065e-05 0 0 4.4603569280944282e-07</Inertia>
+</MassProperties>
+<GeometryFile name="360 servo_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Specular r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="base_holder" uid="base_holder*:*Default" version="272">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base_holder.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.063640000000000002</Mass>
+<CenterOfMass>0 0.013969369241563221 -0.00041864028315475552</CenterOfMass>
+<Inertia>2.7617153288756556e-05 4.8675561191239506e-05 3.092641137817709e-05 -6.7291179112046462e-08 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_holder_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Diffuse r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Specular r="0.47843137254901957" g="0.36470588235294116" b="0.36274509803921567" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="clamp" uid="clamp*:*Default" version="293">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="clamp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.015380000000000001</Mass>
+<CenterOfMass>0.0019851138989484037 0.02046188309744007 -0.0093354617140700303</CenterOfMass>
+<Inertia>5.1752408124073782e-06 2.9532158921016744e-06 3.4330808855627596e-06 1.672920705654041e-07 -7.6924111860648295e-07 6.9908689072490143e-08</Inertia>
+</MassProperties>
+<GeometryFile name="clamp_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Diffuse r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Specular r="0.47843137254901957" g="0.36470588235294116" b="0.36274509803921567" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="joint1" uid="joint1*:*Default" version="417">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="joint1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0049500000000000004</Mass>
+<CenterOfMass>-2.5029237878111546e-07 0.010306788106672219 -0.00014044942027481374</CenterOfMass>
+<Inertia>3.1176099018991376e-07 2.6868411832816164e-07 3.9803587464855041e-07 2.2030342831136051e-09 -9.4957108456125987e-12 3.930501954761196e-12</Inertia>
+</MassProperties>
+<GeometryFile name="joint1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Diffuse r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Specular r="0.47843137254901957" g="0.36470588235294116" b="0.36274509803921567" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="joint2v2" uid="joint2v2*:*Default" version="406">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="joint2v2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.027</Mass>
+<CenterOfMass>0.020589034135652804 0.048218209994647314 0.0084998167761048682</CenterOfMass>
+<Inertia>9.2927622722134122e-06 5.2476293958683438e-06 1.3191097253233788e-05 -1.9875372288869987e-10 8.7447056271319583e-11 1.5091644297282294e-07</Inertia>
+</MassProperties>
+<GeometryFile name="joint2v2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Diffuse r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Specular r="0.47843137254901957" g="0.36470588235294116" b="0.36274509803921567" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="joint3" uid="joint3*:*Default" version="412">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="joint3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.027870000000000002</Mass>
+<CenterOfMass>0.024739115089245228 0.0617190414025467 0.0082669678924585897</CenterOfMass>
+<Inertia>2.69878749225777e-05 7.0845806061452781e-06 3.2701871790696224e-05 1.1569092778731414e-08 -7.7999595986781191e-08 -3.873293868963882e-06</Inertia>
+</MassProperties>
+<GeometryFile name="joint3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Diffuse r="0.95686274509803915" g="0.72941176470588232" b="0.72549019607843135" a="1"/>
+<Specular r="0.47843137254901957" g="0.36470588235294116" b="0.36274509803921567" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="servo s90 (1)" uid="servo s90 (1)*:*Default" version="192">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="servo s90 (1).SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0147</Mass>
+<CenterOfMass>-0.00039272417240495593 0.012978986756099388 0</CenterOfMass>
+<Inertia>1.0261735191814622e-06 8.1169499672953672e-07 1.5005681912543981e-06 0 0 7.1368127408419704e-08</Inertia>
+</MassProperties>
+<GeometryFile name="servo s90 (1)_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Specular r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="servo s90 (2)" uid="servo s90 (2)*:*Default" version="192">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="servo s90 (2).SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0147</Mass>
+<CenterOfMass>-0.00039272417240495593 0.012978986756099388 0</CenterOfMass>
+<Inertia>1.0261735191814622e-06 8.1169499672953672e-07 1.5005681912543981e-06 0 0 7.1368127408419704e-08</Inertia>
+</MassProperties>
+<GeometryFile name="servo s90 (2)_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Specular r="0.7803921568627451" g="0.97254901960784312" b="0.95686274509803915" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
